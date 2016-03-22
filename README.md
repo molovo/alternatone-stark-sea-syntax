@@ -2,7 +2,11 @@
 
 A fork of the original [DuoTone Stark Sea](https://atom.io/themes/duotone-stark-sea-syntax) theme for Atom with the highlighting tweaked to better suit languages with OOP features.
 
-![screenshot](https://raw.github.com/5310/duotone-stark-sea-syntax/master/screenshot.png)
+#### Before (duotone-stark-sea)
+![screenshot](https://raw.github.com/molovo/alternatone-stark-sea-syntax/master/screenshot-before.png)
+
+#### After (alternatone-stark-sea)
+![screenshot](https://raw.github.com/molovo/alternatone-stark-sea-syntax/master/screenshot-after.png)
 
 The following are features of the master DuoTone syntax theme.
 
