@@ -1,7 +1,7 @@
 {
   "name": "alternatone-stark-sea-syntax",
   "theme": "syntax",
-  "version": "1.0.0-mod.1",
+  "version": "1.0.0",
   "description": "A variant of the blue-green DuoTone Stark Sea syntax theme with better syntax for languages with OOP features",
   "keywords": [
     "dark",
