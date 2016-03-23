@@ -1,15 +1,23 @@
 // GF MarkDown
 
-.gfm {
+.gfm, .md {
   .uno-1();
   .punctuation-mixin();
+
+  .text {
+    .uno-1();
+  }
 
   .link {
     .uno-2();
   }
 
+  &.quote {
+    font-style: italic;
+  }
+
   &.markup {
-    .uno-2();
+    .uno-1();
 
     &.bold   { .bold(); }
     &.italic { .italic(); }
