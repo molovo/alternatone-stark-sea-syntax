@@ -1,12 +1,21 @@
 // Jade
 
-.jade {
+.jade, .pug {
+  &.source {
+    .uno-1();
+  }
+
+  &.entity.name,
   &.text {
     .uno-3();
   }
 
   .meta.control.flow {
     .uno-2();
+  }
+
+  &.control.import {
+    .duo-1();
   }
 
   .constant.name.attribute.tag {
