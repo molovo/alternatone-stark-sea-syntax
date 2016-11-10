@@ -1,26 +1,26 @@
 // SASS
 
-.sass {
-  .at-rule .at-rule {
+.syntax--sass {
+  .syntax--at-rule .syntax--at-rule {
     &,
-    > .punctuation{
+    > .syntax--punctuation{
       .uno-1();
     }
   }
-  .mixin + .function,
-  .include + .function {
+  .syntax--mixin + .syntax--function,
+  .syntax--include + .syntax--function {
     .duo-2();
   }
-  &.property-value {
+  &.syntax--property-value {
     .duo-1();
-    .function {
+    .syntax--function {
       .uno-2();
     }
-    .punctuation {
+    .syntax--punctuation {
       .uno-4();
     }
   }
-  &.variable.parameter.url {
+  &.syntax--variable.syntax--parameter.syntax--url {
     .duo-1();
   }
 }

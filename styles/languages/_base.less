@@ -12,10 +12,12 @@
 
 // Mixins -----------------------------------
 .punctuation-mixin(@color:@uno-4) {
-  .punctuation,
-  .bracket,
-  .brace {
-    color: @color;
+  .syntax {
+    &--punctuation,
+    &--bracket,
+    &--brace {
+      color: @color;
+    }
   }
 }
 
@@ -24,69 +26,71 @@
 
 // this basically matches everything without a specific scope
 // so we put it first
-.meta {
-  .uno-4();
-}
+.syntax {
+  &--meta {
+    .uno-4();
+  }
 
-.entity,
-.function-call {
-  .uno-1();
-}
+  &--entity,
+  &--function-call {
+    .uno-1();
+  }
 
-.html.elements,
-.tag {
-  .uno-3();
-}
+  &--html.syntax--elements,
+  &--tag {
+    .uno-3();
+  }
 
-.variable {
-  .uno-2();
-}
-
-.attribute-name,
-.character.escape {
-  .uno-2();
-}
-
-.support {
-  .duo-2();
-
-  &.function {
+  &--variable {
     .uno-2();
   }
 
-  &.property-name {
+  &--attribute-name,
+  &--character.syntax--escape {
+    .uno-2();
+  }
+
+  &--support {
+    .duo-2();
+
+    &.syntax--function {
+      .uno-2();
+    }
+
+    &.syntax--property-name {
+      .uno-3();
+    }
+  }
+
+
+  // Duo hue -----------------------------------
+  &--constant,
+  &--string {
+    .duo-1();
+  }
+
+  &--storage.syntax--type {
     .uno-3();
   }
+
+  &--keyword,
+  &--storage {
+    .uno-3();
+  }
+
+
+  // Comments -----------------------------------
+  &--comment {
+    .uno-4();
+    font-style: italic;
+  }
+
+
 }
 
-
-// Duo hue -----------------------------------
-.constant,
-.string {
-  .duo-1();
-}
-
-.storage.type {
-  .uno-3();
-}
-
-.keyword,
-.storage {
-  .uno-3();
-}
-
+// Text styles -----------------------------------
+.syntax--bold { font-weight: bold; }
+.syntax--italic { font-style: italic; }
 
 // Punctuation -----------------------------------
 .punctuation-mixin();
-
-
-// Comments -----------------------------------
-.comment {
-  .uno-4();
-  font-style: italic;
-}
-
-
-// Text styles -----------------------------------
-.bold { font-weight: bold; }
-.italic { font-style: italic; }
